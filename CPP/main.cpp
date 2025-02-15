@@ -32,13 +32,13 @@ void tampil_data(list<Petshop> &llist)
     else // jika tidak kosong
     {
         // maka tampilkan datanya
-        cout << "Data yang tersedia:\n";
+        cout << "Data yang tersedia: \n";
         int i = 0;
 
         // iterasi tiap elemen pada list menggunakan semacam iterator
         for (list<Petshop>::iterator it = llist.begin(); it != llist.end(); it++)
         {
-            cout << (i + 1) << ". "; // outputkan nomor urutan pada data di list
+            cout << '[' << (i + 1) << "]\n"; // outputkan nomor urutan pada data di list
             it->tabelDatabase(); // panggil tabelDatabase, yang isinya outputan/isi dari list tersebut
             cout << '\n'; // outputkan newline sebagai spasi baru
             i++; // i beriterasi
@@ -55,13 +55,13 @@ void tambah_data(list<Petshop> &llist)
     double harga_produk;
 
     // masukan sesuai atribut masing masing
-    cout << "Masukkan ID: ";
+    cout << "Masukkan ID> ";
     cin >> id;
-    cout << "Masukkan Nama Produk: ";
+    cout << "Masukkan Nama Produk> ";
     cin >> nama_produk;
-    cout << "Masukkan Kategori Produk: ";
+    cout << "Masukkan Kategori Produk> ";
     cin >> kategori_produk;
-    cout << "Masukkan Harga Produk: ";
+    cout << "Masukkan Harga Produk> ";
     cin >> harga_produk;
 
     // buatkan suatu temp untuk menampung dan menambahkan ke list
@@ -82,7 +82,7 @@ void tambah_data(list<Petshop> &llist)
 void ubah_data(list<Petshop> &llist)
 {
     int id; // variabel id
-    cout << "Masukkan ID data yang ingin diubah: ";
+    cout << "Masukkan ID data yang ingin diubah> ";
     cin >> id; // inputkan id
 
     // iterasi tiap elemen pada list menggunakan semacam iterator
@@ -95,11 +95,11 @@ void ubah_data(list<Petshop> &llist)
             double harga_produk;
 
             // masukkan dan inputkan variabel/atribut2 tersebut
-            cout << "Masukkan Nama Produk Baru: ";
+            cout << "Masukkan Nama Produk Baru> ";
             cin >> nama_produk;
-            cout << "Masukkan Kategori Produk Baru: ";
+            cout << "Masukkan Kategori Produk Baru> ";
             cin >> kategori_produk;
-            cout << "Masukkan Harga Produk Baru: ";
+            cout << "Masukkan Harga Produk Baru> ";
             cin >> harga_produk;
 
             // lalu ganti data yang dulu menjadi yang baru. gunakan set untuk mengubah value nya
@@ -120,7 +120,7 @@ void ubah_data(list<Petshop> &llist)
 void hapus_data(list<Petshop> &llist)
 {
     int id; // variabel/atribut id
-    cout << "Masukkan ID data yang mau dihapus: ";
+    cout << "Masukkan ID data yang mau dihapus> ";
     cin >> id; // inputkan id
 
     // iterasi tiap elemen pada list menggunakan semacam iterator
@@ -143,7 +143,7 @@ void cari_data(list<Petshop> &llist)
 {
     // inisialisasikan nama produk
     string nama_produk;
-    cout << "Masukkan Nama Produk yang ingin dicari: ";
+    cout << "Masukkan Nama Produk yang ingin dicari> ";
     cin >> nama_produk; // input nama produk
 
     // iterasi tiap elemen pada list menggunakan semacam iterator
@@ -169,7 +169,7 @@ int main()
     do
     {
         tampilkan_menu(); // tampilkan menunya terlebih dahulu
-        cout << "Pilih menu berapa: ";
+        cout << "Pilih menu berapa?> ";
         cin >> pilihanMenu; // inputkan pilihan menu
 
         switch (pilihanMenu)

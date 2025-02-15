@@ -90,10 +90,11 @@ public: // Isi dengan akses public (terbuka)
     // method untuk menampilkan isi dari database, bersifat tabel
     void tabelDatabase()
     {
-        cout << "\n|ID: " << this->id << "|\n";
-        cout << "|Nama Produk: " << this->nama_produk << "|\n";
-        cout << "|Kategori Produk: " << this->kategori_produk << "|\n";
-        cout << "|Harga Produk: " << this->harga_produk << "|\n";
+        cout << "|ID: " << this->id << " \n";
+        cout << "|Nama Produk: " << this->nama_produk << " \n";
+        cout << "|Kategori Produk: " << this->kategori_produk << " \n";
+        cout << "|Harga Produk: Rp" << this->harga_produk << " \n";
+        cout << "@--------------------------------\n";
     }
 
     // [DESTRUCTOR] == PENUTUP
