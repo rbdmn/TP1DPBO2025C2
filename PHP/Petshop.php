@@ -80,4 +80,10 @@ class Petshop
     {
         return $this->foto_produk;
     }
+
+    // DESTRUKTOR
+    public function __destruct()
+    {
+        
+    }
 }

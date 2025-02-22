@@ -38,3 +38,7 @@ class Petshop:
 
     # set harga produk
     def set_hargaProduk(self, hargaProduk): self.__hargaProduk = hargaProduk
+
+    # DESTRUKTOR
+    def __del__(self):
+        print("contoh jika pakai destructor")
