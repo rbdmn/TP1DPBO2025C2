@@ -5,7 +5,19 @@
  Itu pada folder CPP, aku lupa tidak menghapus main.exe nya jadi saya hapus dari folder CPP saya. Saya jujur tidak mengubah file filenya (bisa dilihat dari waktu kirim filenya)
 
 # STRUKTUR OOP
-Di dalam setiap bahsa
+Untuk Tugas praktikum kali ini kita hanya menggunakan satu class and object saja yaitu Petshop, nah di dalam class petshop ini hampir dari semua bahasa isinya sama saja (kecuali dari sintaks) yang isinya merupakan kondimen dari class pada umumnya, diantaranya:
+1. Properti/Atribut
+   Untuk atribut atribut sudah sesuai kesepakatan soal yang terdiri dari 4 atribut, seperti id produk, nama produk, kategori produk, dan harga produk (hanya untuk php yang punya atribut tambahan yaitu foto produk).
+   Atribut bersifat private berarti hanya bisa diakses dari dalam class itu sendiri. Ini menjaga enkapsulasi, sehingga data tidak bisa diubah langsung dari luar class.
+
+2. Konstruktor
+   Konstruktor inilah yang menjadi dasar struktur oop pada umumnya. Fungsinya yaitu untuk menginisialisasi atribut dengan nilai awal saat objek dibuat. Untuk konstruktor digunakan di tiap bahasa pemograman.
+
+3. Getter Setter
+   Getter dan Setter ini adalah metode dalam OOP untuk mengakses dan mengubah atribut yang bersifat private. Untuk getter dan setter ini juga berlaku di tiap bahasa pemograman.
+
+4. Destruktor
+   Destruktor itu intinya kebalikan dari konstruktor, yaitu mengakhiri atau keluar dari cakupan scope. Untuk destruktor dipakai di semua bahasa kecuali java.
 
 # DOKUMENTASI JAVA
 Untuk Java, saya membuat DBMS CRUD sederhana yang bisa menambah, mengedit, mendelete, dan mencari. Berikut penggunaan program ini:
